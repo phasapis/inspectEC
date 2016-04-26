@@ -22,7 +22,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>eu.impress</groupId>
+            <groupId>eu.inspect</groupId>
             <artifactId>repository</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
