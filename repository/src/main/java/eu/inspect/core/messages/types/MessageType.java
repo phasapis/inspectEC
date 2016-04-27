@@ -6,7 +6,6 @@ package eu.inspect.core.messages.types;
  */
 
 // Relates to MessageType from Domain Model
-public enum MessageType {
-    
-    NOTIFICATION, COMMUNITY_MESSAGE
+public enum MessageType {    
+    NOTIFICATION, COMMUNITY_MESSAGE, INCIDENT_REPORT
 }

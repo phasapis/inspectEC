@@ -6,5 +6,5 @@ package eu.inspect.core.messages.types;
  */
 
 public enum OriginatingService {    
-    MOBILEAPP, PUBLICPORTAL
+    MOBILEAPP, PUBLICPORTAL, SECUREPORTAL
 }

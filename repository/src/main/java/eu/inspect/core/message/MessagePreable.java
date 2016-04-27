@@ -13,7 +13,7 @@ public class MessagePreable {
     
     private UUID userID;
     private String username;
-    private Date timestap;
+    private Date timestamp;
     private MessageType messageType;
     private OriginatingService originatingService;
 
@@ -33,12 +33,12 @@ public class MessagePreable {
         this.username = username;
     }
 
-    public Date getTimestap() {
-        return timestap;
+    public Date getTimestamp() {
+        return timestamp;
     }
 
-    public void setTimestap(Date timestap) {
-        this.timestap = timestap;
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 
     public MessageType getMessageType() {

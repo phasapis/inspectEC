@@ -1,24 +1,25 @@
 package eu.inspect.core.message;
 
+import eu.inspect.core.messages.types.ApplicationServerResponseTypes;
 import java.util.UUID;
 
 /**
  *
  * @author panos
  */
-public class ResponseMessageBase
+public class ApplicationResponseMessageBase
 {
-    private String message;
+    private ApplicationServerResponseTypes message;
     private UUID messageID;
 
-    public String getMessage() {
+    public ApplicationServerResponseTypes getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(ApplicationServerResponseTypes message) {
         this.message = message;
     }
-
+        
     public UUID getMessageID() {
         return messageID;
     }

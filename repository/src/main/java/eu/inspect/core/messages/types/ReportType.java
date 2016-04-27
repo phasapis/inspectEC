@@ -6,7 +6,6 @@ package eu.inspect.core.messages.types;
  */
 
 // Relates to ReportType from Domain Model
-public enum ReportType {
-    
+public enum ReportType {    
     THEFT
 }
