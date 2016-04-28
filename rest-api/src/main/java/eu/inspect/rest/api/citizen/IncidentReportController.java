@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import eu.inspect.core.security.IAuthenticationMechanism;
 import eu.inspect.core.message.incident.IncidentReportRegisteredUser;
 import eu.inspect.jms.IMessagingService;
-import eu.inspect.jms.MessagingService;
 import eu.inspect.jms.topic.types.TopicNameEnumeration;
 import java.util.UUID;
 import java.util.logging.Level;
@@ -40,7 +39,7 @@ public class IncidentReportController
             response.setMessageID(UUID.randomUUID());            
             HttpStatus httpStatus;
             
-            if(!authService.authenticate(null, null))
+            if(!authService.authenticate(incidentReport.getUsername(), null))
             {
                 Logger.getLogger(IncidentReportController.class.getName()).log(Level.SEVERE, "Authentication error occured");                
                 httpStatus = HttpStatus.FORBIDDEN;
@@ -72,7 +71,7 @@ public class IncidentReportController
             {
                 Logger.getLogger(IncidentReportController.class.getName()).log(Level.SEVERE, "Report required fields are missing");
                 httpStatus = HttpStatus.NOT_ACCEPTABLE;
-                response.setMessage(ApplicationServerResponseTypes.REPORT_REQUIRED_FIELDS_MISSING);
+                response.setMessage(ApplicationServerResponseTypes.REQUIRED_FIELDS_MISSING);
                 return new ResponseEntity<ApplicationResponseMessageBase>(response, httpStatus);            
             }
 
