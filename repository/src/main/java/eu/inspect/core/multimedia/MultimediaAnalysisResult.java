@@ -1,22 +1,18 @@
 package eu.inspect.core.multimedia;
 
+import eu.inspect.core.message.MessagePreable;
+import java.util.Date;
+
 /**
  *
  * @author panos
  */
-public class MediaFileDescriptor {
-    private int indexNumber;
+public class MultimediaAnalysisResult
+extends MessagePreable
+{
     private String URL;
     private String mimeType;
-    private String filesize;
-    
-    public int getIndexNumber() {
-        return indexNumber;
-    }
-
-    public void setIndexNumber(int indexNumber) {
-        this.indexNumber = indexNumber;
-    }
+    private Date annotationDate;
 
     public String getURL() {
         return URL;
@@ -34,12 +30,12 @@ public class MediaFileDescriptor {
         this.mimeType = mimeType;
     }
 
-    public String getFilesize() {
-        return filesize;
+    public Date getAnnotationDate() {
+        return annotationDate;
     }
 
-    public void setFilesize(String filesize) {
-        this.filesize = filesize;
+    public void setAnnotationDate(Date annotationDate) {
+        this.annotationDate = annotationDate;
     }
     
     

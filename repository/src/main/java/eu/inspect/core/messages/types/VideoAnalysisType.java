@@ -1,0 +1,9 @@
+package eu.inspect.core.messages.types;
+
+/**
+ *
+ * @author panos
+ */
+public enum VideoAnalysisType {
+    VIDEO_FACE_RECOGNITION, VIDEO_PERSON_DETECTION, PHOTO_SCENE_LABELLING, PHOTO_LOCATION_RECOGNITION, MM_CORRELATION_PERSON_RECONGITION, MM_CORRELATION_FACE_RECONGITION
+}
