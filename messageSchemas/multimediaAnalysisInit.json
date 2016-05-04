@@ -1,0 +1,64 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "userID": {
+      "id": "userID",
+      "type": "string"
+    },
+    "username": {
+      "id": "username",
+      "type": "string"
+    },
+    "timestamp": {
+      "id": "timestamp",
+      "type": "string"
+    },
+    "messageType": {
+      "id": "messageType",
+      "type": "string"
+    },
+    "originatingService": {
+      "id": "originatingService",
+      "type": "string"
+    },
+    "mediaFileDescriptorList": {
+      "id": "mediaFileDescriptorList",
+      "type": "array",
+      "items": {
+        "id": "1",
+        "type": "object",
+        "properties": {
+          "indexNumber": {
+            "id": "indexNumber",
+            "type": "integer"
+          },
+          "mimeType": {
+            "id": "mimeType",
+            "type": "string"
+          },
+          "filesize": {
+            "id": "filesize",
+            "type": "number"
+          },
+          "url": {
+            "id": "url",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "userID",
+    "username",
+    "timestamp",
+    "messageType",
+    "originatingService",
+    "mediaFileDescriptorList"
+  ]
+}
+

@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "userID": {
+      "id": "userID",
+      "type": "string"
+    },
+    "username": {
+      "id": "username",
+      "type": "string"
+    },
+    "timestamp": {
+      "id": "timestamp",
+      "type": "string"
+    },
+    "messageType": {
+      "id": "messageType",
+      "type": "string"
+    },
+    "originatingService": {
+      "id": "originatingService",
+      "type": "string"
+    },
+    "incidentID": {
+      "id": "incidentID",
+      "type": "string"
+    },
+    "reportID": {
+      "id": "reportID",
+      "type": "string"
+    },
+    "incidentStatus": {
+      "id": "incidentStatus",
+      "type": "string"
+    },
+    "suspectDescription": {
+      "id": "suspectDescription",
+      "type": "string"
+    },
+    "reporterType": {
+      "id": "reporterType",
+      "type": "string"
+    },
+    "reportType": {
+      "id": "reportType",
+      "type": "string"
+    },
+    "locationDescription": {
+      "id": "locationDescription",
+      "type": "string"
+    },
+    "reportDescription": {
+      "id": "reportDescription",
+      "type": "string"
+    },
+    "anonymousUser": {
+      "id": "anonymousUser",
+      "type": "boolean"
+    },
+    "timeOccured": {
+      "id": "timeOccured",
+      "type": "string"
+    },
+    "latitude": {
+      "id": "latitude",
+      "type": "integer"
+    },
+    "longitude": {
+      "id": "longitude",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "userID",
+    "username",
+    "timestamp",
+    "messageType",
+    "originatingService",
+    "incidentID",
+    "reportID",
+    "incidentStatus",
+    "suspectDescription",
+    "reporterType",
+    "reportType",
+    "locationDescription",
+    "reportDescription",
+    "anonymousUser",
+    "timeOccured",
+    "latitude",
+    "longitude"
+  ]
+}

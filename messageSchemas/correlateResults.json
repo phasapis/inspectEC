@@ -1,0 +1,66 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "userID": {
+      "id": "userID",
+      "type": "string"
+    },
+    "username": {
+      "id": "username",
+      "type": "string"
+    },
+    "timestamp": {
+      "id": "timestamp",
+      "type": "string"
+    },
+    "messageType": {
+      "id": "messageType",
+      "type": "string"
+    },
+    "originatingService": {
+      "id": "originatingService",
+      "type": "string"
+    },
+    "incidentIDSet": {
+      "id": "incidentIDSet",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "string"
+      }
+    },
+    "rulesList": {
+      "id": "rulesList",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "index": {
+            "id": "index",
+            "type": "integer"
+          },
+          "rule": {
+            "id": "rule",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "userID",
+    "username",
+    "timestamp",
+    "messageType",
+    "originatingService",
+    "incidentIDSet",
+    "rulesList"
+  ]
+}
+
+
